@@ -1,0 +1,87 @@
+body {
+    font-family: 'Azeret Mono', sans-serif;
+    display: flex;
+    background-image: url(https://i0.wp.com/free4kwallpapers.com/uploads/wallpaper/wide-minimalistic-landscape-wallpaper-1920x1080-wallpaper.jpg);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+nav{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#logo{
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.navcontent{
+    list-style: none;
+    display: flex;
+}
+
+.navcontent li{
+    margin: 0 10px;
+}
+
+button{
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Azeret Mono';
+    font-weight: 300;
+    font-size: small;
+    cursor: pointer;
+}
+
+.calculatorcontainer{
+    display: grid;
+    gap: 8px;
+    width: 230px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.4);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.textarea{
+    background-color: rgba(255,255,255,0.8);
+    grid-column: span 4;
+    height: 4em;
+    border-radius: 8px;
+    margin-bottom: 19px;
+    white-space: nowrap;overflow: hidden;
+    text-align: right;
+    direction: rtl;
+}
+
+#output{
+    text-align: right;
+    margin: 10px;
+    direction: ltr;
+}
+
+#backspace{
+    grid-column: span 2;
+}
+
+#equal{
+    grid-column: span 2;
+}
+
+#AC, #backspace, #divide, #multiply, #subtract, #addition, #equal{
+    color: orange;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#seven, #eight, #nine, #four, #five, #six, #one, #two, #three, #decimal, #zero{
+    background-color: rgba(255,255,255,0.5);
+    font-weight: 400;
+    font-size: medium;
+}
