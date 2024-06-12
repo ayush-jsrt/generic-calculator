@@ -41,9 +41,24 @@ equal.addEventListener('click', ()=>{
     if(isNaN(res)){
         display.textContent='not defined';
     }else{
+        res=parseFloat(res.toFixed(5));
         display.textContent=res;
     }
-    out='';
+
+    out=res.toString();
+    if(!isJSONString(out)){
+        out="";
+    }
+
     const buttonValue = this.textContent;
     console.log("Button clicked: " + '=');
 })
+
+function isJSONString(str) {
+    try {
+        JSON.parse(str);
+        return true;
+    } catch (e) {
+        return false;
+    }
+}

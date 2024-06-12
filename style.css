@@ -15,6 +15,14 @@ nav{
     width: 100%;
 }
 
+a,a:visited,a:active,a:focus{
+    text-decoration: none;
+    color: orange;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+}
 #logo{
     height: 60px;
     margin-top: 15px;
@@ -40,6 +48,16 @@ button{
     cursor: pointer;
 }
 
+p,div{
+    display: inline;
+}
+
+p{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
 .calculatorcontainer{
     display: grid;
     gap: 8px;
@@ -56,7 +74,8 @@ button{
     height: 4em;
     border-radius: 8px;
     margin-bottom: 19px;
-    white-space: nowrap;overflow: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
     text-align: right;
     direction: rtl;
 }
@@ -64,7 +83,11 @@ button{
 #output{
     text-align: right;
     margin: 10px;
+    font-size: 30px;
+    overflow: hidden;
+    font-weight: 300;
     direction: ltr;
+    color: black;
 }
 
 #backspace{
